@@ -1,0 +1,31 @@
+.modal{
+    position: relative;
+    
+        width: 528px;
+        height: 581px;
+        background-color: $bgr-color-primary;
+        padding: 40px;
+    
+        color: $text-color-second;
+        &__btn{
+            position: absolute;
+                right: 8px;
+                top: 8px;
+            
+            
+               @extend .icon-box;
+                padding: 0;
+            
+                cursor: pointer;
+            
+                background-color: inherit;
+                border: 1px solid rgba(0, 0, 0, 0.1);
+                border-radius: 50%;
+                transition: fill 250ms $timing-function;
+                &:hover, &:focus{
+                    fill: $accent-color;
+                        
+                }
+        }
+       
+}

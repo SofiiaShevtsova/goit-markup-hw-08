@@ -1,0 +1,78 @@
+.modal-form {
+  text-align: center;
+
+  &__title {
+    margin-bottom: 12px;
+    margin-top: 0;
+    font-size: 20px;
+    line-height: 1.15;
+
+    color: $text-color-primary;
+  }
+  &__item {
+    display: block;
+    margin-bottom: 4px;
+
+    font-size: 12px;
+    line-height: 1.16;
+
+    letter-spacing: 0.01em;
+  }
+  &__input-box {
+    position: relative;
+    display: flex;
+
+    &:focus-within .modal-form__input-icon {
+        fill: $accent-color
+    }
+&:focus-within .modal-form__input{
+            outline: 1px solid $accent-color;
+
+}
+    
+  }
+  &__input {
+    display: block;
+    width: 100%;
+    min-height: 40px;
+    padding-left: 40px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+            border-radius: 4px;
+            cursor: pointer;
+
+    &--textarea {
+      height: 120px;
+      width: 100%;
+      padding: 15px;
+      resize: none;
+      overflow: auto;
+
+      color: $accent-color;
+
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      border-radius: 4px;
+      cursor: pointer;}
+
+      &--textarea::placeholder {
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.01em;
+
+        color: rgba(117, 117, 117, 0.5);
+      }
+      &--textarea:focus{
+                    outline: 1px solid $accent-color;
+      }
+    
+  }
+  &__input-icon {
+    position: absolute;
+    top: 25%;
+    left: 12px;
+
+    @extend .icon-box;
+    fill: $text-color-primary;
+
+    transition: fill 250ms $timing-function;
+  }
+}

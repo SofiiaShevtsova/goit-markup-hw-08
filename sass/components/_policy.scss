@@ -1,0 +1,39 @@
+.policy{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    @extend .icon-box;
+    gap: 9px;
+    font-size: 14px;
+        line-height: 1.71;
+    &__checkbox{
+        @extend .visually-hidden;
+     &:checked + .policy__check-box {
+               border: none;
+               background-origin: border-box;
+               background-color: $accent-color;
+           }
+      
+        }
+           
+    &__label{
+        @extend .icon-box;
+        cursor: pointer;
+    }
+    &__check-box{
+        display: flex;
+            width: 15px;
+            height: 15px;
+            margin-right: 8px;
+            border: 2px solid $text-color-primary;
+    }
+    &__check-icon{
+        margin: 0%;
+            padding: 0%;
+            @extend .icon-box;
+            fill: $text-color-white;
+    }
+    &__link{
+        color: $accent-color;
+
+    }
+}

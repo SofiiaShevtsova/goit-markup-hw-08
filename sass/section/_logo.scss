@@ -1,0 +1,20 @@
+.logo {
+    @extend .resed;
+display: inline-block;
+margin-right: 93px;
+font-family: $font-family-second;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+&__item{
+    color: $accent-color;
+    &--black{
+        color: #000000;
+    }
+    &--white{
+        color: $text-color-white;
+    }
+}
+
+
+}

@@ -1,0 +1,35 @@
+@mixin list($gap){
+    @extend .resed;
+    display: flex;
+    text-align: start;
+    gap: $gap;
+    }
+
+    .list{
+        @include list (30px);
+            
+        &--nav { @include list (50px)};
+     
+        &--block{
+            @extend .resed;
+            display: block;
+            text-align: start;
+            
+        }
+        &__card--blok:not(:first-child){
+            margin-top: 9px;
+
+        }
+        &--btn-proj{
+            @include list (8px);
+            justify-content: center;
+            margin-bottom: 50px;
+
+        }
+        &--wrap{
+            @include list (30px);
+            flex-wrap: wrap;
+        }
+
+        
+    }

@@ -1,0 +1,22 @@
+.footer{
+    background-color: $bgr-color-dark;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        &__address{
+            margin-top: 20px;
+            font-style: normal;
+                font-size: 14px;
+                line-height: 1.71;
+        }
+        &__title{
+            margin-bottom: 20px;
+            margin-top: 0;
+            
+                font-size: 14px;
+                line-height: calc(16 / 14);
+                text-transform: uppercase;
+            
+                color: $text-color-white;
+        }
+       
+}
