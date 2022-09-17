@@ -18,6 +18,12 @@
           <span class="logo__item">Web</span
           ><span class="logo__item--black">Studio</span></a
         >
+        <div class="menu">
+          <button class="menu__btn">
+            <svg class="menu__icon" width="40" height="40"><use class="menu__open"></use>
+              <use class="menu__close"></use></svg>
+          </button>
+        </div>
         <nav class="nav">
           <ul class="list--nav">
             <li class="nav__card"><a href="./index.html" class="nav__item--active">Студія</a></li>
@@ -308,7 +314,7 @@
       <section class="client">
         <div class="container">
           <h2 class="title">Постійні клієнти</h2>
-          <ul class="list">
+          <ul class="list client__list">
             <li class="client__card">
               <a href="" class="client__link">
                 <svg width="106" height="60" class="client__logo">
@@ -356,8 +362,8 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container--footer-flex">
-        <div class="container--footer">
+      <div class="container">
+        <div class="footer__container">
         <a href="./index.html" class="logo">
           <span class="logo__item">Web</span><span class="logo__item--white">Studio</span></a>
           <address class="footer__address">
@@ -385,7 +391,7 @@
             </ul>
           </address>
         </div>
-        <div class="container--footer">
+        <div class="footer__container">
           <h3 class="footer__title">приєднуйтесь</h3>
                 <ul class="soc-contact">
                   <li class="soc-contact__card">
@@ -414,7 +420,7 @@
                   </li>
                 </ul>
         </div>
-        <div class="container--footer">
+        <div class="footer__container">
           <h3 class="footer__title">Підпишіться на розсилку</h3>
           <form name="email" class="form-list" autocomplete="on">
             <label class="form-list__label"

@@ -1,5 +1,11 @@
 .soc-contact{
                     @include list (10px);
+
+                justify-content: center;
+
+                @media screen and (min-width:1200px) {
+                    justify-content: start;
+                }
                     &__link{
 @extend .icon-box;
     width: 44px;
@@ -22,9 +28,8 @@
         color: $text-color-white;
         background-color: $accent-color;
     }
-                    }
-
-
-        
+                    }  
        
 }
+
+// all

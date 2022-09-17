@@ -1,37 +1,49 @@
 @mixin container($display) {
     display:$display;
     text-align: center;
+    justify-content: start;
     align-items: center;
-    justify-content: center;
-    width: 1200px;
-        padding: 0 15px;
+    padding: 0 15px;
         margin: 0 auto;
+
 }
 .icon-box {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+
+
 .container{
-    @include container(blok);
-    &--footer{
-        display: block;
-        text-align: start;
-        &:first-child{
-            margin-right: 70px;
+    @include container(block);
+    width: 100%;
+    @media screen and (min-width:480px) and (max-width:767px) {
+            width: 480px;
         }
-        &:last-child{
-            margin-left: auto;
-            width: calc(50% - 30px);
-        }
-
-       
-        
-    }
-         &--footer-flex {
-             @include container(flex);
-             align-items: baseline;
     
-         }
-}
+        @media screen and (min-width:768px) and (max-width:1199px) {
+            width: 768px;
+        }
+    
+        @media screen and (min-width:1200px) {
+            width: 1200px;
+        
+        
+        }}
 
+    .footer__container:not(:last-child) {
+        margin-bottom: 60px;
+
+
+    }
+//   &--footer{
+//         display: block;
+//         text-align: start;
+//         &:first-child{
+//             margin-right: 70px;
+//         }
+//         &:last-child{
+//             margin-left: auto;
+//             width: calc(50% - 30px);
+//         }

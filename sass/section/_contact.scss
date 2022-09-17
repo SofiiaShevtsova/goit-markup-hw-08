@@ -1,26 +1,29 @@
 .contact{
-    @include list(30px);
-        margin-left: auto;
-    &__item{ @extend .resed;
-        display: flex;
-            align-items: center;
+    display: none;
+
+    
+    // @include list(30px);
+    //     margin-left: auto;
+    // &__item{ @extend .resed;
+    //     display: flex;
+    //         align-items: center;
         
-            color: $text-color-second;
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 1.14;
-            letter-spacing: 0.02em;
-        transition: color 250ms $timing-function;
-    &:hover,
-        &:focus {
-            color: $accent-color;
-        }
-    }
+    //         color: $text-color-second;
+    //         font-weight: 500;
+    //         font-size: 14px;
+    //         line-height: 1.14;
+    //         letter-spacing: 0.02em;
+    //     transition: color 250ms $timing-function;
+    // &:hover,
+    //     &:focus {
+    //         color: $accent-color;
+    //     }
+    // }
        
-            &__icon{
-                fill: currentColor;
-                    margin-right: 10px;
-            }
+    //         &__icon{
+    //             fill: currentColor;
+    //                 margin-right: 10px;
+    //         }
             
         }
 

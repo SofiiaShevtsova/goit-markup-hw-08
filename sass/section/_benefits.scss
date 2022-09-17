@@ -1,12 +1,13 @@
 .benefits{
-    padding: 94px 0;
-    &__icon-box {
-        @extend .icon-box;
-        padding: 25px 100px;
-        margin-bottom: 30px;
-        background-color: $bgr-color-second;
-    }
-    &__title{
+    padding: 60px 0;
+&__icon-box {
+            @extend .icon-box;
+            padding: 25px 190px;
+            margin-bottom: 30px;
+            background-color: $bgr-color-second;
+         }
+ &__title{
+    @extend .resed;
         margin-bottom: 10px;
         
             font-size: 14px;
@@ -14,8 +15,21 @@
             text-transform: uppercase;
     }
     &__text{
+            @extend .resed;
         font-size: 14px;
             line-height: 1.71;
             color: $text-color-second;
     }
+    &__card:not(:last-child) {
+        margin-bottom: 30px;
+
+    }
 }
+
+
+    // padding: 94px 0;
+    // &__icon-box {
+    //     padding: 25px 100px;
+    // }
+   
+    

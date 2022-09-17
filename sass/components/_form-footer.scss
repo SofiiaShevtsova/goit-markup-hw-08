@@ -1,11 +1,12 @@
 .form-list{
-    display: flex;
-        gap: 12px;
-        &__label{
-            width: 100%;
-        }
+
+    @media screen and (min-width:1200px) {
+        display: flex;
+        gap: 12px; 
+    }
+   
         &__input{
-            @extend .form-list__label;
+            width: 100%;
                 padding: 15px;
             
                 background-color: inherit;
@@ -17,8 +18,13 @@
                 border: 1px solid rgba(255, 255, 255, 0.3);
                 box-shadow: 4px 4px rgba(0, 0, 0, 0.15);
                 border-radius: 4px;
+                margin-bottom: 20px;
+                    @media screen and (min-width:1200px) {
+                        margin: 0;
+                        }
                 &:focus {
                         outline: 1px solid rgba(255, 255, 255, 0.3);
                     }
         }
 }
+// all

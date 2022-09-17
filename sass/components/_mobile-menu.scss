@@ -1,0 +1,10 @@
+.menu{
+    margin-left: auto;
+    &__btn{
+        border: none;
+        padding: 0;
+    }
+    &__icon{
+        @extend .icon-box;
+    }
+}
