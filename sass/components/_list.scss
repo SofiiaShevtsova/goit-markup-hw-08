@@ -8,6 +8,7 @@
     .client__list{
         @include list(30px);
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     .list{

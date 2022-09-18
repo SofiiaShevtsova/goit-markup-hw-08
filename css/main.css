@@ -237,6 +237,7 @@ summary {
   text-align: start;
   gap: 30px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .title {
@@ -369,7 +370,12 @@ body {
 .menu__btn {
   border: none;
   padding: 0;
+  background-color: transparent;
 }
+.menu__icon {
+  fill: currentColor;
+}
+
 .nav {
   display: none;
 }
@@ -429,9 +435,10 @@ body {
   padding: 60px 0;
 }
 .benefits__icon-box {
-  padding: 25px 190px;
+  padding: 25px 0;
   margin-bottom: 30px;
   background-color: #f5f4fa;
+  width: 100%;
 }
 .benefits__title {
   margin-bottom: 10px;

@@ -2,9 +2,10 @@
     padding: 60px 0;
 &__icon-box {
             @extend .icon-box;
-            padding: 25px 190px;
+            padding: 25px 0;
             margin-bottom: 30px;
             background-color: $bgr-color-second;
+            width: 100%;
          }
  &__title{
     @extend .resed;
