@@ -19,9 +19,10 @@
           ><span class="logo__item--black">Studio</span></a
         >
         <div class="menu">
-          <button class="menu__btn">
-            <svg class="menu__icon" width="40" height="40"><use class="menu__open js-open-menu" href="./images/svg/icons.svg.svg#menu"></use>
-              <use class="menu__close js-close-menu" href="./images/svg/icons.svg.svg#close"></use></svg>
+          <button class="menu__btn js-open-menu" aria-expanded="false"
+          aria-controls="mobile-menu">
+            <svg class="menu__icon" width="40" height="40"><use class="menu__open" href="./images/svg/icons.svg.svg#menu"></use>
+              </svg>
           </button>
         </div>
         <nav class="nav">
@@ -517,6 +518,63 @@
           <button type="submit" class="button">Відправити</button>
         </form>
       </div>
+    </div>
+
+    <div class="menu__container js-menu-container" id="mobile-menu"><button class="menu__btn js-close-menu" aria-expanded="false" aria-controls="mobile-menu">
+      <svg class="menu__icon" width="40" height="40">
+      <use class="menu__close"  href="./images/svg/icons.svg.svg#close"></use>
+      </svg>
+    </button>
+        <nav class="menu__nav">
+          <ul class="list--nav">
+            <li class="nav__card"><a href="./index.html" class="nav__item--active">Студія</a></li>
+            <li class="nav__card"><a href="./portfolio.html" class="nav__item">Портфоліо</a></li>
+            <li class="nav__card"><a href="" class="nav__item">Контакти</a></li>
+          </ul>
+        </nav>
+        <ul class="menu__contact">
+          <li class="contact__card">
+            <a href="mailto:info@devstudio.com" class="contact__item">
+              <svg width="16" height="12" class="contact__icon">
+                <use href="./images/svg/icons.svg.svg#icon-e-mail"></use>
+              </svg>
+              info@devstudio.com</a>
+          </li>
+        
+          <li class="contact__card">
+            <a href="tel:+380961111111" class="contact__item"><svg width="10" height="16" class="contact__icon">
+                <use href="./images/svg/icons.svg.svg#icon-phone"></use>
+              </svg>
+              +38 096 111 11 11</a>
+          </li>
+        </ul>
+                <ul class="menu__soc-contact">
+                  <li class="soc-contact__card">
+                    <a href="" class="soc-contact__link--white"><svg width="20" height="20" class="soc-contact__icon">
+                        <use href="./images/svg/icons.svg.svg#icon-insta"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="soc-contact__card">
+                    <a href="" class="soc-contact__link--white"><svg width="20" height="20" class="soc-contact__icon">
+                        <use href="./images/svg/icons.svg.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="soc-contact__card">
+                    <a href="" class="soc-contact__link--white"><svg width="20" height="20" class="soc-contact__icon">
+                        <use href="./images/svg/icons.svg.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="soc-contact__card">
+                    <a href="" class="soc-contact__link--white"><svg width="20" height="20" class="soc-contact__icon">
+                        <use href="./images/svg/icons.svg.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+
     </div>
 
     <script src="./js/modal.js"></script>

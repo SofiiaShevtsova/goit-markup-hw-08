@@ -9,4 +9,27 @@
         @extend .icon-box;
         fill: currentColor;
     }
+    &__container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 48px 40px;
+        background-color: $bgr-color-primary;
+        z-index: 999;
+    
+        transform: translateX(100%);
+        transition: transform 250ms ease-in-out;
+        &.is-open {
+    transform: translateX(0);
 }
+& .menu__btn {
+     position: absolute;
+     top: 16px;
+     right: 16px;
+     color: currentColor;
+ }
+    }
+}
+

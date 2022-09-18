@@ -2,9 +2,15 @@
     margin-top: 20px;
     margin-bottom: 30px;
     @extend .icon-box;
-    gap: 9px;
+    gap: 8px;
+    font-size: 12px;
+    line-height: 1.17;
+    @media screen and (min-width:1200px) {
+            gap: 9px;
     font-size: 14px;
         line-height: 1.71;
+
+    }
     &__checkbox{
         @extend .visually-hidden;
      &:checked + .policy__check-box {
@@ -33,7 +39,10 @@
             fill: $text-color-white;
     }
     &__link{
+        margin-left: 1px;
         color: $accent-color;
 
     }
 }
+
+// all

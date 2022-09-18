@@ -1,16 +1,16 @@
 @import"./utils/normalize";
 @import"./utils/variables";
 @import"./components/hidden";
-// @import"./components/backdrop";
+@import"./components/backdrop";
 @import"./components/resed";
 @import"./components/container";
 @import"./components/btn";
 @import"./components/list";
 @import"./components/title";
 @import"./components/social-contact-link";
-// @import"./components/modal";
-// @import "./components/modal-form";
-// @import"./components/policy";
+@import"./components/modal";
+@import "./components/modal-form";
+@import"./components/policy";
 @import"./components/form-footer";
 @import"./section/body";
 @import"./section/header";
@@ -24,5 +24,5 @@
 @import"./section/team";
 @import"./section/client";
 @import"./section/footer";
-// @import "./section/project";
+@import "./section/project";
 

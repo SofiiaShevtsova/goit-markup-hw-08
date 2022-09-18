@@ -18,19 +18,44 @@
         &--block {
             @extend .resed;
         }
+        &--btn-proj{
+            width: 100%;
+            padding: 0 15px;
+            @include list (8px);
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+            row-gap: 15px;
+            @media screen and (min-width:480px) {
+                width: 480px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            @media screen and (min-width:768px) {
+                width: 768px;
+                justify-content: center;
+                
+            }
+            @media screen and (min-width:1200px) {
+                width: 1200px;
+            }
+        }
+
+        &--wrap{
+            @extend .resed;
+        }
         // @include list (30px);
             
         // &--nav { @include list (50px)};
      
-        // &--block{
-        //     display: block;
-        //     text-align: start;
+        &--block{
+            display: block;
+            text-align: start;
             
-        // }
-        // &__card--blok:not(:first-child){
-        //     margin-top: 9px;
+        }
+        &__card--blok:not(:first-child){
+            margin-top: 9px;
 
-        // }
+        }
         // &--btn-proj{
         //     @include list (8px);
         //     justify-content: center;
