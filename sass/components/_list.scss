@@ -1,5 +1,7 @@
 @mixin list($gap){
-    @extend .resed;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     display: flex;
     text-align: start;
     gap: $gap;
@@ -14,10 +16,13 @@
     .list{
         @extend .resed;
 
-
-        &--block {
-            @extend .resed;
+        @media screen and (min-width:768px) {
+            @include list(30px);
+            flex-wrap:wrap;
+            
         }
+
+
         &--btn-proj{
             width: 100%;
             padding: 0 15px;
@@ -45,11 +50,13 @@
         }
         // @include list (30px);
             
-        // &--nav { @include list (50px)};
+        &--nav { @include list (50px);
+        @extend .resed;}
      
         &--block{
+            @extend .resed;
             display: block;
-            text-align: start;
+            text-align: center;
             
         }
         &__card--blok:not(:first-child){

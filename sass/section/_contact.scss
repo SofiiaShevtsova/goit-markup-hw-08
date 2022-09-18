@@ -1,29 +1,48 @@
 .contact{
     display: none;
+    @extend .resed;
+    margin-left: auto;
+    @media screen and (min-width:768px) {
+display: block;  
+    }
+    @media screen and (min-width:1200px) {
+        @include list(30px);
+        margin-left: auto;
+            
+    }
+    &__card:not(:last-child) {
+        margin-bottom: 10px;
+        @media screen and (min-width:1200px) {
+            margin-bottom: 0;
+        }
+    }
 
-    
-    // @include list(30px);
-    //     margin-left: auto;
-    // &__item{ @extend .resed;
-    //     display: flex;
-    //         align-items: center;
+    &__item{ 
+        @extend .resed;
+        display: flex;
+            align-items: center;
         
-    //         color: $text-color-second;
-    //         font-weight: 500;
-    //         font-size: 14px;
-    //         line-height: 1.14;
-    //         letter-spacing: 0.02em;
-    //     transition: color 250ms $timing-function;
-    // &:hover,
-    //     &:focus {
-    //         color: $accent-color;
-    //     }
-    // }
+            color: $text-color-second;
+            font-weight: 500;
+            font-size: 12px;
+                line-height: calc(14 / 12);            
+                letter-spacing: 0.02em;
+                transition: color 250ms $timing-function;
+        
+@media screen and (min-width:1200px) {
+            font-size: 14px;
+            line-height: 1.14;
+}
+    &:hover,
+        &:focus {
+            color: $accent-color;
+        }
+    }
        
-    //         &__icon{
-    //             fill: currentColor;
-    //                 margin-right: 10px;
-    //         }
+            &__icon{
+                fill: currentColor;
+                    margin-right: 10px;
+            }
             
         }
 

@@ -1,34 +1,45 @@
 .nav{
 display: none;
-    
-    // &__item{@extend .resed;
-    //     color: $text-color-primary;
-    //     font-weight: 500;
-    //     font-size: 14px;
-    //     line-height: 1.14;
-    //     letter-spacing: 0.02em;
-    //     &:hover, 
-    //     &:focus{
-    //         color: $accent-color;
-            
-    //             transition: color 250ms $timing-function;
-    //     }
-    // &--active{
-    //     text-decoration: none;
-    //     position: relative;
-    //         color: $accent-color;}
-    //     &--active::after {
-    //             content: " ";
-        
-    //             position: absolute;
-    //             bottom: -32px;
-        
-    //             display: block;
-    //             width: 100%;
-    //             height: 5px;
-    //             border-radius: 4px;
-    //             background-color: $accent-color;
-    //         }
-    //     }
-       
+@media screen and (min-width:768px) {
+    display: block;
+    margin-left: 88px;
 }
+@media screen and (min-width:1200px) {
+margin-left: 93px;    
+}
+    
+    &__item{@extend .resed;
+        color: $text-color-primary;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        transition: color 250ms $timing-function;
+
+        &:hover, 
+        &:focus{
+            color: $accent-color;
+        }
+        &--active{
+        text-decoration: none;
+        position: relative;
+            color: $accent-color;}
+        &--active::after {
+                content: " ";
+        
+                position: absolute;
+                bottom: -33px;
+        
+                display: block;
+                width: 100%;
+                height: 5px;
+                border-radius: 4px;
+                background-color: $accent-color;
+                @media screen and (min-width:1200px) {
+                    bottom: -32px;
+                    
+                }
+            }}
+    
+}
+// all

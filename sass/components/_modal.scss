@@ -17,10 +17,14 @@
   
         }
 
-
-
-
-    
+&__list{
+                @extend .resed;
+                    display: block;
+                    text-align: start;
+}
+&__card--block:not(:first-child){
+    margin-top: 10px;
+}
         &__btn{
             position: absolute;
                 right: 8px;
