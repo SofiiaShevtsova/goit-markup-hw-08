@@ -1,9 +1,14 @@
 .menu{
     margin-left: auto;
+    overflow-y: scroll;
     &__btn{
         border: none;
         padding: 0;
         background-color: transparent;
+        cursor: pointer;
+        &:hover .menu__icon, &:focus .menu__icon{
+            fill: $accent-color;
+        }
     }
     &__icon{
         @extend .icon-box;
@@ -31,5 +36,67 @@
      color: currentColor;
  }
     }
+    &__list{
+        @extend .resed;
+        margin-bottom: 302px;}
+        &__card:not(:last-child){
+            margin-bottom: 32px;
+        }
+    
+    &__item {
+        @extend .resed;
+                color: $text-color-primary;
+                font-weight: 500;
+                font-size: 40px;
+                line-height: calc(47 / 40);
+                letter-spacing: 0.02em;
+                
+                transition: color 250ms $timing-function;
+                &:hover, 
+                &:focus{
+                    color: $accent-color;
+    }
+    &--active{
+        @extend .menu__item;
+        color: $accent-color;
+    }
+}
+&__contact {
+    margin-bottom: 64px;
+    @extend .resed;
+}
+&__contact-item:not(:last-child){margin-bottom: 32px;}
+&__tel{
+    @extend .resed;
+        font-weight: 500;
+        font-size: 34px;
+        line-height: calc(40 / 34);
+    
+        letter-spacing: 0.02em;
+        color: $accent-color;
+}
+&__email{
+    @extend .resed;
+    font-weight: 500;
+        font-size: 24px;
+        line-height: calc(28 / 24);
+        letter-spacing: 0.02em;
+        color: $text-color-second;
+}
+&__soc-contact{
+    @extend .icon-box;
+    @extend .resed;
+    gap: 20px;
+}
+&__soc-link{
+    @extend .resed;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: calc(22 / 18);
+    
+        letter-spacing: 0.02em;
+    
+        color: $accent-color;
+}
 }
 

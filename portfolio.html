@@ -27,8 +27,12 @@
         </div>
         <nav class="nav">
           <ul class="list--nav">
-            <li class="nav__card"><a href="./index.html" class="nav__item--active">Студія</a></li>
-            <li class="nav__card"><a href="./portfolio.html" class="nav__item">Портфоліо</a></li>
+            <li class="nav__card">
+              <a href="./index.html" class="nav__item">Студія</a>
+            </li>
+            <li class="nav__card">
+              <a href="./portfolio.html" class="nav__item--active">Портфоліо</a>
+            </li>
             <li class="nav__card"><a href="" class="nav__item">Контакти</a></li>
           </ul>
         </nav>
@@ -289,5 +293,58 @@
         </div>
       </div>
     </footer>
+
+    <div class="menu__container js-menu-container" id="mobile-menu">
+      <button class="menu__btn js-close-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="menu__icon" width="40" height="40">
+          <use class="menu__close" href="./images/svg/icons.svg.svg#close"></use>
+        </svg>
+      </button>
+      <nav class="menu__nav">
+        <ul class="menu__list">
+          <li class="menu__card">
+            <a href="./index.html" class="menu__item">Студія</a>
+          </li>
+          <li class="menu__card">
+            <a href="./portfolio.html" class="menu__item--active">Портфоліо</a>
+          </li>
+          <li class="menu__card"><a href="" class="menu__item">Контакти</a></li>
+        </ul>
+      </nav>
+      <ul class="menu__contact">
+        <li class="menu__contact-item">
+          <a href="tel:+380961111111" class="menu__tel">
+            +38 096 111 11 11</a>
+        </li>
+    
+        <li class="menu__contact-item">
+          <a href="mailto:info@devstudio.com" class="menu__email">
+            info@devstudio.com</a>
+        </li>
+      </ul>
+      <ul class="menu__soc-contact">
+        <li class="menu__soc-item">
+          <a href="" class="menu__soc-link">Instagram
+          </a>
+        </li>
+        <li class="menu__soc-item">
+          <a href="" class="menu__soc-link">Twitter
+          </a>
+        </li>
+        <li class="menu__soc-item">
+          <a href="" class="menu__soc-link">Facebook
+          </a>
+        </li>
+        <li class="menu__soc-item">
+          <a href="" class="menu__soc-link">Linkedin
+          </a>
+        </li>
+      </ul>
+    </div>
+
+      <script src="./js/mobile_menu.js"></script>
+
   </body>
+
+
 </html>
