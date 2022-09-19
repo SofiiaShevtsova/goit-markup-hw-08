@@ -1,14 +1,31 @@
 .proj{
 margin: 60px auto;
-&__list-item:not(:last-child){
-    margin-bottom: 30px;
+
+@media screen and (min-width:1200px) {
+    margin:  94px auto;
 }
 
+&__list-item {
+                    @media screen and (min-width:768px) {
+                            width: calc(50% - 15px);
+                        }
+                                                                                @media screen and (min-width:1200px) {
+                                                                                    width: calc((100% - 60px) / 3);
+                                                                                }
+}
+
+&__list-item:not(:last-child){
+    margin-bottom: 30px;
+@media screen and (min-width:1200px) {
+        margin-bottom: 0;
+    }
+}
 &__link {
             text-decoration: none;
                 display: block;
                 color: inherit;
                 transition: box-shadow 250ms $timing-function;
+
             }
             
             &__link:hover,
@@ -70,7 +87,5 @@ border: 1px solid rgba(238, 238, 238, 1);
             margin-top: 4px;
     }
 
-
-        //     margin: 94px 0;
-
 }
+// all

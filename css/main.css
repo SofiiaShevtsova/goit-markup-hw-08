@@ -209,8 +209,50 @@ summary {
   }
 }
 
-.footer__container:not(:last-child) {
+@media screen and (min-width: 1200px) {
+  .footer__box {
+    text-align: start;
+  }
+  .footer__box:first-child {
+    margin-right: 70px;
+  }
+}
+.footer__box:last-child {
+  width: 450px;
+}
+@media screen and (min-width: 1200px) {
+  .footer__box:last-child {
+    width: calc(50% - 30px);
+    margin-left: auto;
+  }
+}
+.footer__box:not(:last-child) {
   margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .footer__box:not(:last-child) {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__box:not(:last-child) {
+    width: calc(25% - 30px);
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer__container {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    justify-content: start;
+  }
 }
 
 .button {
@@ -306,6 +348,17 @@ summary {
     width: 1200px;
   }
 }
+@media screen and (min-width: 768px) {
+  .list--wrap {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    text-align: start;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+}
 .list--nav {
   list-style-type: none;
   margin: 0;
@@ -316,7 +369,6 @@ summary {
 }
 .list--block {
   display: block;
-  text-align: center;
 }
 .list__card--blok:not(:first-child) {
   margin-top: 9px;
@@ -346,6 +398,9 @@ summary {
 }
 @media screen and (min-width: 1200px) {
   .soc-contact {
+    justify-content: center;
+  }
+  .soc-contact.footer__soc-contact {
     justify-content: start;
   }
 }
@@ -521,6 +576,9 @@ summary {
   .form-list {
     display: flex;
     gap: 12px;
+  }
+  .form-list__label {
+    width: 100%;
   }
 }
 .form-list__input {
@@ -898,6 +956,31 @@ body {
 .work {
   display: none;
 }
+@media screen and (min-width: 1200px) {
+  .work {
+    display: block;
+    padding-bottom: 94px;
+  }
+  .work__card {
+    position: relative;
+  }
+  .work__image {
+    display: block;
+  }
+  .work__class {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 27px 0;
+    color: #ffffff;
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+}
 
 .team {
   background-color: #f5f4fa;
@@ -1006,8 +1089,28 @@ body {
 .proj {
   margin: 60px auto;
 }
+@media screen and (min-width: 1200px) {
+  .proj {
+    margin: 94px auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .proj__list-item {
+    width: calc(50% - 15px);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .proj__list-item {
+    width: calc((100% - 60px) / 3);
+  }
+}
 .proj__list-item:not(:last-child) {
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .proj__list-item:not(:last-child) {
+    margin-bottom: 0;
+  }
 }
 .proj__link {
   text-decoration: none;

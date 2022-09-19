@@ -4,7 +4,10 @@
                 justify-content: center;
 
                 @media screen and (min-width:1200px) {
-                    justify-content: start;
+                    justify-content: center;
+                    &.footer__soc-contact{
+                        justify-content: start;
+                    }
                 }
                     &__link{
 @extend .icon-box;
