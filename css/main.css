@@ -184,7 +184,7 @@ summary {
   align-items: center;
 }
 
-.container {
+.container, .footer__container {
   display: block;
   text-align: center;
   justify-content: start;
@@ -194,17 +194,17 @@ summary {
   width: 100%;
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
-  .container {
+  .container, .footer__container {
     width: 480px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .container {
+  .container, .footer__container {
     width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .container {
+  .container, .footer__container {
     width: 1200px;
   }
 }
@@ -698,6 +698,11 @@ body {
   z-index: 999;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
+}
+@media screen and (min-width: 480px) {
+  .menu__container {
+    width: 480px;
+  }
 }
 @media screen and (min-width: 768px) {
   .menu__container {
