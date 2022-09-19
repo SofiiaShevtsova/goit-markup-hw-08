@@ -5,29 +5,24 @@
     text-align: center;
     margin: 0 auto;
     padding: 118px 0;
-    // @media screen and (min-width:768px) {
-        
-    // }
+        @include bgr-image ("../images/t-hero.jpg");
+            @include retina ("../images/t-hero2x.jpg");
+            background-size: cover;
+
+
+    @media screen and (min-width:768px) {
+        @include bgr-image ("../images/t-hero.jpg");
+    @include retina ("../images/t-hero2x.jpg");
+  background-size: 768px;
+    }
 
     @media screen and (min-width:1200px) {
      padding-top: 200px;
     padding-bottom: 200px;
+    @include bgr-image ("../images/hero.jpg");
+    @include retina ("../images/hero2x.jpg");
+    background-size: 1600px;
     }
-
-
-
-
-    // background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-    //         rgba(47, 48, 58, 0.4)),
-    //     url("../images/hero.jpg");
-    // background-repeat: no-repeat;
-    // background-position: center;
-    // background-size: 1600px;
-
-
-    // margin-left: auto;
-    // margin-right: auto;
-    
 }
 
 .hero__title {

@@ -138,7 +138,11 @@
             <li class="work__card">
               <div class="work__box">
                 <img
-                  src="./images/formatjpg/os21.jpg"
+                  srcset="
+                    ./images/descktop/work/os21.jpg    1x,
+                    ./images/descktop/work/1work2x.jpg 2x
+                  "
+                  src="./images/descktop/work/os21.jpg"
                   alt="створення сайту"
                   width="370"
                   class="work__image"
@@ -149,7 +153,11 @@
             <li class="work__card">
               <div class="work__box">
                 <img
-                  src="./images/formatjpg/os22.jpg"
+                  srcset="
+                    ./images/descktop/work/os22.jpg    1x,
+                    ./images/descktop/work/2work2x.jpg 2x
+                  "
+                  src="./images/descktop/work/os22.jpg"
                   alt="програмне забезпечення"
                   width="370"
                   class="work__image"
@@ -160,7 +168,11 @@
             <li class="work__card">
               <div class="work__box">
                 <img
-                  src="./images/formatjpg/os23.jpg"
+                  srcset="
+                    ./images/descktop/work/os23.jpg    1x,
+                    ./images/descktop/work/3work2x.jpg 2x
+                  "
+                  src="./images/descktop/work/os23.jpg"
                   alt="розробка дизайну"
                   width="370"
                   class="work__image"
@@ -176,12 +188,35 @@
           <h2 class="title">Наша команда</h2>
           <ul class="list">
             <li class="team__list-item">
-              <img
-                src="./images/formatjpg/team/team1.jpg"
-                alt="Ігор Дем'яненко"
-                width="270"
-                class="team__photo"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/descktop/team/1team.jpg 1x,
+                    ./images/descktop/team/1team2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                  sizes="270"
+                />
+                <source
+                  srcset="
+                    ./images/tabel/team/t1team.jpg 1x,
+                    ./images/tabel/team/t1team2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                  sizes="350"
+                />
+                <source srcset="
+                                    ./images/mobile/team/m1team.jpg 1x,
+                                    ./images/mobile/team/m1team2x.jpg 2x
+                                  " media="(min-width:480px)" sizes="450" />
+
+                <img
+                  src="./images/mobile/team/m1team.jpg"
+                  alt="Ігор Дем'яненко"
+                  width="450"
+                  class="team__photo"
+                />
+              </picture>
               <div class="team__card">
                 <h3 class="team__name">Ігор Дем'яненко</h3>
                 <p class="team__prof">Product Designer</p>
@@ -224,12 +259,22 @@
               </div>
             </li>
             <li class="team__list-item">
-              <img
-                src="./images/formatjpg/team/team2.jpg"
-                alt="Ольга Рєпіна"
-                width="270"
-                class="team__photo"
-              />
+              <picture>
+                <source srcset="
+                                  ./images/descktop/team/2team.jpg 1x,
+                                  ./images/descktop/team/2team2x.jpg 2x
+                                " media="(min-width:1200px)" sizes="270" />
+                <source srcset="
+                                  ./images/tabel/team/t2team.jpg 1x,
+                                  ./images/tabel/team/t2team2x.jpg 2x
+                                " media="(min-width:768px)" sizes="350" />
+                <source srcset="
+                                                  ./images/mobile/team/m2team.jpg 1x,
+                                                  ./images/mobile/team/m2team2x.jpg 2x
+                                                " media="(min-width:480px)" sizes="450" />
+              
+                <img src="./images/mobile/team/m2team.jpg" alt="Ігор Дем'яненко" width="450" class="team__photo" />
+              </picture>
               <div class="team__card">
                 <h3 class="team__name">Ольга Рєпіна</h3>
                 <p class="team__prof">Frontend Developer</p>
@@ -272,12 +317,22 @@
               </div>
             </li>
             <li class="team__list-item">
-              <img
-                src="./images/formatjpg/team/team3.jpg"
-                alt="Микола Тарасов"
-                width="270"
-                class="team__photo"
-              />
+              <picture>
+                <source srcset="
+                                  ./images/descktop/team/3team.jpg 1x,
+                                  ./images/descktop/team/3team2x.jpg 2x
+                                " media="(min-width:1200px)" sizes="270" />
+                <source srcset="
+                                  ./images/tabel/team/t3team.jpg 1x,
+                                  ./images/tabel/team/t3team2x.jpg 2x
+                                " media="(min-width:768px)" sizes="350" />
+                <source srcset="
+                                                  ./images/mobile/team/m3team.jpg 1x,
+                                                  ./images/mobile/team/m3team2x.jpg 2x
+                                                " media="(min-width:480px)" sizes="450" />
+              
+                <img src="./images/mobile/team/m3team.jpg" alt="Ігор Дем'яненко" width="450" class="team__photo" />
+              </picture>
               <div class="team__card">
                 <h3 class="team__name">Микола Тарасов</h3>
                 <p class="team__prof">Marketing</p>
@@ -320,12 +375,22 @@
               </div>
             </li>
             <li class="team__list-item">
-              <img
-                src="./images/formatjpg/team/team4.jpg"
-                alt="Михайло Єрмаков"
-                width="270"
-                class="team__photo"
-              />
+              <picture>
+                <source srcset="
+                                  ./images/descktop/team/4team.jpg 1x,
+                                  ./images/descktop/team/4team2x.jpg 2x
+                                " media="(min-width:1200px)" sizes="270" />
+                <source srcset="
+                                  ./images/tabel/team/t4team.jpg 1x,
+                                  ./images/tabel/team/t4team2x.jpg 2x
+                                " media="(min-width:768px)" sizes="350" />
+                <source srcset="
+                                                  ./images/mobile/team/m4team.jpg 1x,
+                                                  ./images/mobile/team/m4team2x.jpg 2x
+                                                " media="(min-width:480px)" sizes="450" />
+              
+                <img src="./images/mobile/team/m4team.jpg" alt="Ігор Дем'яненко" width="450" class="team__photo" />
+              </picture>
               <div class="team__card">
                 <h3 class="team__name">Михайло Єрмаков</h3>
                 <p class="team__prof">UI Designer</p>
@@ -623,10 +688,7 @@
       </nav>
       <ul class="menu__contact">
         <li class="menu__contact-item">
-          <a href="tel:+380961111111" class="menu__tel"
-            >
-            +38 096 111 11 11</a
-          >
+          <a href="tel:+380961111111" class="menu__tel"> +38 096 111 11 11</a>
         </li>
 
         <li class="menu__contact-item">
@@ -637,24 +699,16 @@
       </ul>
       <ul class="menu__soc-contact">
         <li class="menu__soc-item">
-          <a href="" class="menu__soc-link"
-            >Instagram
-          </a>
+          <a href="" class="menu__soc-link">Instagram </a>
         </li>
         <li class="menu__soc-item">
-          <a href="" class="menu__soc-link"
-            >Twitter
-          </a>
+          <a href="" class="menu__soc-link">Twitter </a>
         </li>
         <li class="menu__soc-item">
-          <a href="" class="menu__soc-link"
-            >Facebook
-          </a>
+          <a href="" class="menu__soc-link">Facebook </a>
         </li>
         <li class="menu__soc-item">
-          <a href="" class="menu__soc-link"
-            >Linkedin
-          </a>
+          <a href="" class="menu__soc-link">Linkedin </a>
         </li>
       </ul>
     </div>
