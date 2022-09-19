@@ -1,6 +1,5 @@
 .menu{
     margin-left: auto;
-    overflow-y: scroll;
     @media screen and (min-width:768px) {
         display: none;
     }
@@ -25,13 +24,11 @@
         height: 100%;
         padding: 48px 40px;
         background-color: $bgr-color-primary;
-        z-index: 999;
+        z-index: 5;
     
+        overflow: auto;
         transform: translateX(100%);
         transition: transform 250ms ease-in-out;
-            @media screen and (min-width:480px) {
-                    width: 480px;
-                }
 
         @media screen and (min-width:768px) {
             display: none;

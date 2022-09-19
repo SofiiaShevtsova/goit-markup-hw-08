@@ -9,7 +9,6 @@
             z-index: 2;
 
             display: flex;
-            align-items: center;
             justify-content: center;
     
             transform: scale(1);
@@ -17,6 +16,10 @@
             transition: opacity 500ms $timing-function 250ms,
                 transform 500ms $timing-function 50ms,
                 visibility 500ms $timing-function;
+                overflow: auto;
+                @media screen and (min-height:610px) {
+                    align-items: center;
+                }
 
                 &.is-hidden {
                         visibility: hidden;

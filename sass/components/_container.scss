@@ -40,8 +40,12 @@
                                     }
                     }
 
-        &:last-child{        
-            width: 450px;
+        &:last-child{  
+            width: 100%;
+            @media screen and (min-width:480px) {
+                           width: 450px;
+
+            }      
                     @media screen and (min-width:1200px) {
                             width: calc(50% - 30px);
                             margin-left: auto;
