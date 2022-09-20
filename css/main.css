@@ -482,6 +482,11 @@ summary {
   line-height: 1.5;
   color: #212121;
 }
+@media screen and (max-width: 400px) {
+  .modal-form__title {
+    width: 250px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal-form__title {
     width: 100%;
