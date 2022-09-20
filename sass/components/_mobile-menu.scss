@@ -43,9 +43,15 @@
      color: currentColor;
  }
     }
+    &__flex-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+
+    }
     &__list{
-        @extend .resed;
-        margin-bottom: 302px;}
+        @extend .resed;}
         &__card:not(:last-child){
             margin-bottom: 32px;
         }
@@ -76,11 +82,17 @@
 &__tel{
     @extend .resed;
         font-weight: 500;
-        font-size: 34px;
+    letter-spacing: 0.02em;
+        color: $accent-color;  
+        font-size: 34px;                
         line-height: calc(40 / 34);
-    
-        letter-spacing: 0.02em;
-        color: $accent-color;
+
+              @media screen and (max-width:390px) {
+                font-size: 26px;        
+
+              }  
+      
+
 }
 &__email{
     @extend .resed;
@@ -94,6 +106,7 @@
     @extend .icon-box;
     @extend .resed;
     gap: 20px;
+    flex-wrap: wrap;
 }
 &__soc-link{
     @extend .resed;
