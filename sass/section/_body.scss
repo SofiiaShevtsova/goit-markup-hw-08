@@ -3,4 +3,7 @@ body{
         color:$text-color-primary;
         font-family:$font-family-primary;
         letter-spacing: 0.03em;
+        &.modal-open{
+            overflow: hidden;
+        }
 }
