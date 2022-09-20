@@ -183,7 +183,7 @@ summary {
   text-decoration: none;
 }
 
-.icon-box, .benefits__icon-box, .menu__soc-contact, .menu__icon, .policy__check-icon, .policy__label, .policy, .modal-form__input-icon, .modal__btn, .soc-contact__link, .soc-contact__link--white, .button__icon {
+.icon-box, .benefits__icon-box, .menu__soc-contact, .menu__icon, .policy__check-icon, .policy, .modal-form__input-icon, .modal__btn, .soc-contact__link, .soc-contact__link--white, .button__icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -567,7 +567,11 @@ summary {
   background-color: #2196f3;
 }
 .policy__label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
+  flex-wrap: wrap;
 }
 .policy__check-box {
   display: flex;

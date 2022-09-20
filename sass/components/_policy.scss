@@ -22,8 +22,11 @@
         }
            
     &__label{
-        @extend .icon-box;
+display: inline-flex;
+align-items: center;
+justify-content: center;
         cursor: pointer;
+        flex-wrap: wrap;
     }
     &__check-box{
         display: flex;
