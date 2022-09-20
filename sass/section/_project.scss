@@ -6,6 +6,8 @@ margin: 60px auto;
 }
 
 &__list-item {
+    border: 1px solid rgba(238, 238, 238, 1);
+        border-top: none;
                     @media screen and (min-width:768px) {
                             width: calc(50% - 15px);
                         }
@@ -25,7 +27,7 @@ margin: 60px auto;
                 display: block;
                 color: inherit;
                 transition: box-shadow 250ms $timing-function;
-
+height: 100%;
             }
             
             &__link:hover,
@@ -68,9 +70,11 @@ position: absolute;
         transform 250ms $timing-function;
     }
     &__card{
-border: 1px solid rgba(238, 238, 238, 1);
-    padding: 20px 24px;
-    border-top: none;
+                padding: 20px 24px;
+// border: 1px solid rgba(238, 238, 238, 1);
+//     padding: 20px 24px;
+//     border-top: none;
+    // height: 147px;
     }
     &__name{
         font-weight: 700;

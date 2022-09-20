@@ -24,9 +24,10 @@
 
 
         &--btn-proj{
+            @include list (8px);            
             width: 100%;
             padding: 0 15px;
-            @include list (8px);
+
             margin-bottom: 40px;
             flex-wrap: wrap;
             row-gap: 15px;
@@ -50,6 +51,7 @@
             @media screen and (min-width:768px) {
                      @include list (30px);
                      flex-wrap: wrap;
+                     align-items: stretch;
             }
         }
             
